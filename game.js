@@ -9,7 +9,7 @@ var level =0;
 var started = false;
 
 
-$(document).keydown(function(event){
+$(document).click(function(event){
     
 
     if(!started){
