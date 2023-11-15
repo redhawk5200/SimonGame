@@ -9,17 +9,14 @@ var level =0;
 var started = false;
 
 
-$(document).click(function(event){
-    
 
+$(document).on('click touchstart', function() {
     if(!started){
         $("#level-title").text("Level "+level);
         nextSequence();
         started=true;
     }
-    
-
-})
+});
 
 $(".btn").click( function handler(){
     var userChosenColor = this.id;
