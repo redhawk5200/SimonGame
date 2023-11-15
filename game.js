@@ -10,13 +10,17 @@ var started = false;
 
 
 
-$(document).keydown( function() {
+$(document).keydown(function(event){
+
+
     if(!started){
         $("#level-title").text("Level "+level);
         nextSequence();
         started=true;
     }
-});
+
+
+})
 
 $(".btn").click( function handler(){
     var userChosenColor = this.id;
